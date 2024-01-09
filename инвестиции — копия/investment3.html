@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style3.css">
+    <script src="./scripts/js2.js"></script>
+    <title>Document</title>
+</head>
+<body> <div class="container">
+ <header class="header">
+    <div class="header-inner">
+        <div class="left-block">
+        <div class="header-logo"><a href="./investment.html"><img src="./assets/logo.png" alt=""></a></div>
+    <nav class="nav">  
+    <a  class ="nav-link" href="#">Частным лицам </a>
+    <a  class ="nav-link" href="#">Бизнесу</a>
+    <a  class ="nav-link" href="#">Премиум</a>
+    <a  href="./investment2.html" class ="nav-link" href="#">Часто задаваемые вопросы</a>
+    </nav>
+</div>
+    <div class="time-nomer-zvonok">
+    <div class="nomer"><a href="./investment3.html" style="text-decoration: none; color: black;">Личный кабинет </a></div>
+    <div class="chel">
+    <img src="./assets/chel.png" alt=""></div>
+</div>
+<select class="nav-dropdown" onchange="location.href = this.value;">
+    <option value="#" selected><img src="./assets/poloski.png" alt=""></option>
+    <option value="#" >Частным лицам</option>
+    <option value="#">Бизнесу</option>
+    <option value="./investment3.html">Личный кабинет</option>
+    <option value="#">Премиум</option>
+    <option value="./investment2.html">Часто задаваемые вопросы</option>
+</select>
+    </div>
+</div>
+    </header>
+    <main class="main">
+        <!-- <div class="container3">
+            <div class="blok">
+                <div class="vxod">Вход</div>
+
+                <div class="registration">
+                    <div class="form">
+                      <input type="text" name="login" placeholder="Логин">
+                      <input type="password" name="password" placeholder="Пароль">
+                      <button type="submit">Войти</button>
+                      <button type="button" onclick="register()">Зарегистрироваться</button>
+                    </div>
+                </div>
+            </div>
+       
+        </div> -->
+        <div id="login-container">
+            <h2 id="login-title">Вход</h2>
+            <input type="text" id="username" placeholder="Username">
+            <input type="password" id="password" placeholder="Password">
+            <input type="button" id="login-button" value="Login">
+          </div>
+          <script>
+            const loginButton = document.getElementById('login-button');
+        
+            loginButton.addEventListener('click', function(event) {
+              event.preventDefault();
+        
+              const username = document.getElementById('username').value;
+              const password = document.getElementById('password').value;
+        
+              // задаем логин и пароль
+              const savedUsername = '123';
+              const savedPassword = '123';
+        
+              if (username === savedUsername && password === savedPassword) {
+                window.location.href = './investment.html';
+              } else {
+                alert('Неправильный логин или пароль');
+              }
+            });
+          </script>
+
+
+</main>
+
+<footer class="footer">
+
+<div class="poloska2"></div>
+<div class="textobhee">
+<div class="textleft">© 2007–2023 «ФИНАМ»Дизайн — «Липка и Друзья», 2020 <br>При полном или частичном использовании материалов ссылка на Finam.ru обязательна. Подробнее <br> об использовании информации и котировок. Редакция не несет ответственности за достоверность <br> информации, опубликованной в рекламных объявлениях. 18+ <br>
+    Не является индивидуальной инвестиционной рекомендацией. <br>
+    АО «Инвестиционная компания «ФИНАМ». Лицензия на осуществление брокерской деятельности <br>№177-02739-100000 от 09.11.2000 выдана ФКЦБ России без ограничения срока действия. Адрес: <br>127006 г. Москва, пер. Настасьинский, д.7, стр.2. <br>
+    Информационные документы о финансовых инструментах <br>
+    This site is protected by reCAPTCHA and the Google Privacy Policy and Terms of Service apply.</div>
+
+    <div class="textright">ООО «Управляющая компания «Финам Менеджмент». Лицензия на осуществление деятельности по <br>управлению ценными бумагами №077-11748-001000 выдана ФСФР России без ограничения срока <br>действия. <br>
+        АО «Банк ФИНАМ». Лицензия на осуществление банковских операций со средствами в рублях и <br>иностранной валюте № 2799 от 29 сентября 2015 года. <br>
+        ООО «ФИНАМ ФОРЕКС», лицензия профессионального участника рынка ценных бумаг на <br>осуществление деятельности форекс-дилера № 045-13961-020000 от 14 декабря 2015 года. Адрес: <br> 127006, Российская Федерация, г. Москва, пер. Настасьинский, д. 7, стр. 2. <br>
+        Политика в отношении обработки персональных данных</div>
+    </div>
+</footer>
+</body>
+</html>-
